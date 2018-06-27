@@ -8,52 +8,9 @@
   <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="style.css">
   
-<!-- fullpage -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
-<style media="screen"type="text/css">
-#map { width:500px; height:500px; }
-.fullpage-wrapper {
-  width: 100%!important;
-  transform: none!important;
-}
-
-.fp-section {
-  width: 100%!important;
-  position: absolute;
-  left: 0;
-  top: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .7s ease-in-out;
-}
-
-.fp-section.active {
-  visibility: visible;
-  opacity: 1;
-}
-  
-.fp-slidesContainer {
-  width: 100%!important;
-  transform: none!important;
-}
-
-.fp-slide {
-  width: 100%!important;
-  position: absolute;
-  left: 0;
-  top: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: all .7s ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.fp-slide.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-</style>
+  <!-- fullpage -->
+  <link rel="stylesheet" href="libs/fullpage/jquery.fullpage.css">
+  <link rel="stylesheet" href="libs/fullpage/fullpage.css">
 <!-- ../fullpage -->
 </head>
 
@@ -83,598 +40,606 @@
     </div>
   </header>
 
-<div id="fullpage">
-
-  <div class="section" style="z-index: 100">
-    <div class="mi_wrap_callback">
-    <div class="mi_wrap">
-      <div class="callback"></div>
-    </div>
+<div class="fullpage_dots" style="position: absolute; z-index: 19000; transform: translateY(-50%); top: 50%;">
+ <div class="item" style="background-color: rgb(255, 221, 21); color: rgb(88, 89, 91)">
+  <a href="#one" class="href"><svg style="" width="45" height="20"><line x1="0" y1="10" x2="45" y2="10" stroke="rgb(88, 89, 91)" stroke-width="2"></svg></a>
+    <div class="slide_num">01</div>
   </div>
-  <div class="mi_slider">
-    <div class="mi_slide"><img src="img/slide-1.jpg">
-      <div class="mi_wrap padding-left">
-        <div class="mi_slide_plate">
-          <div class="mi_slide_plate_site">
-            <div class="mi_slide_title">39 лет мастерства</div>
-            <div class="mi_slide_desc">В производстве специальных кабелей для нефти и газа</div>
-          </div>
-          <div class="mi_slide_plate_link">
-            <div class="mi_slide_company">Новокуйбышевский завод масел и присадок</div><a class="btn_yellow" href="#">Смотреть проекты</a>
-          </div>
-        </div>
-      </div>
+  <div class="item">
+    <a href="#two" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+      <div class="slide_num"></div>
     </div>
-    <div class="mi_slide"><img src="img/slide-2.jpg">
-      <div class="mi_wrap padding-left">
-        <div class="mi_slide_plate">
-          <div class="mi_slide_plate_site">
-            <div class="mi_slide_title">Итальянское качество</div>
-            <div class="mi_slide_desc">Теперь официально в России</div>
-          </div>
-          <div class="mi_slide_plate_link">
-            <div class="mi_slide_company fancybox_play">Смотреть ролик о производстве кабеля</div><a class="btn_yellow" href="#">Читать о компании</a>
-          </div>
-        </div>
+    <div class="item">
+      <a href="#three" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+        <div class="slide_num"></div>
       </div>
-    </div>
-    <div class="mi_slide"><img src="img/slide-3.jpg">
-      <div class="mi_wrap padding-left">
-        <div class="mi_slide_plate">
-          <div class="mi_slide_plate_site">
-            <div class="mi_slide_title">Будущее наступило</div>
-            <div class="mi_slide_desc">Новые технологии производства кабеля</div>
-          </div>
-          <div class="mi_slide_plate_link">
-            <div class="mi_slide_company fancybox_play">Смотреть ролик о производстве кабеля</div><a class="btn_yellow" href="#">Читать о компании</a>
-          </div>
+      <div class="item">
+        <a href="#four" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+          <div class="slide_num"></div>
         </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-
-    <div class="section">
-      <div id="technology" class="mi_technology">
-        <div class="mi_wrap">
-          <div class="mi_title-section">Создаем новые технологии</div>
-          <div class="mi_technology_container">
-            <div class="mi_technology_list">
-              <div class="mi_technology_item"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span>
-                <div class="mi_technology_ic">1</div>
-                <div class="mi_technology_title">Улучшенный ПВХ</div>
-                <div class="mi_technology_desc">Материал оболочки объединяющий лучшие свойства ПВХ и безгалогенного материала. Гибкость, легкая прокладка, сопротивление к перепаду температур, повышенная стойкость к углеводородам, кислотам, щелочам и воде. <br><br><strong>Преимущества</strong><br>невысокая цена при высоких характеристиках. <br><br><strong>Выгоды</strong><br>экономия средств</div>
-              </div>
-              <div class="mi_technology_item"><span class="line-2-1"></span><span class="line-2-2"></span><span class="line-2-3"></span><span class="line-2-4"></span>
-                <div class="mi_technology_ic">2</div>
-                <div class="mi_technology_title">Газ-стоп <span>Gas stop</span></div>
-                <div class="mi_technology_desc">Защита от распространения по кабелю опасных газов с помощью герметизации кабельного сердечника. <br><br><strong>Преимущества</strong><br>защита от распространения газов по кабелю, предотвращение воспламенений и взырвоопасных ситуаций.<br><br><strong>Выгоды</strong><br> экономия средств на замене или ремонте поврежденного газом оборудования. Предотвращает происшествия на объекте.</div>
-              </div>
-              <div class="mi_technology_item"><span class="line-3-1"></span><span class="line-3-2"></span><span class="line-3-3"></span><span class="line-3-4"></span>
-                <div class="mi_technology_ic">3</div>
-                <div class="mi_technology_title">Нилорам</div>
-                <div class="mi_technology_desc">Защита от агрессивных химических веществ и влаги с помощью дополнительной внутренней оболочки из специальных полиамидных материалов. <br><br><strong>Преимущества</strong><br>гибкость, полная химическая стойкость, малый внешний диаметр и вес. <br><br><strong>Выгоды</strong><br>дешевле чем применение дополнительной внешней химической защиты, быстрая прокладка и монтаж</div>
-              </div>
-              <div class="mi_technology_item"><span class="line-4-2"></span><span class="line-4-3"></span><span class="line-4-4"></span>
-                <div class="mi_technology_ic">4</div>
-                <div class="mi_technology_title">Улучшенный силикон</div>
-                <div class="mi_technology_desc">Материал оболочки объединяющий лучшие свойства ПВХ и безгалогенного материала. Гибкость, легкая прокладка, сопротивление к перепаду температур, повышенная стойкость к углеводородам, кислотам, щелочам и воде. <br><br><strong>Преимущества</strong><br>невысокая цена при высоких характеристиках. <br><br><strong>Выгоды</strong><br>экономия средств</div>
-              </div>
+        <div class="item">
+          <a href="#five" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+            <div class="slide_num"></div>
+          </div>
+          <div class="item">
+            <a href="#six" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+              <div class="slide_num"></div>
             </div>
-            <div class="mi_technology_img_block"><img class="mi_technology_img" src="img/technology.jpg">
-              <div class="mi_project_counter counter-1">1</div>
-              <div class="mi_project_counter counter-2">2</div>
-              <div class="mi_project_counter counter-3">3</div>
-              <div class="mi_project_counter counter-4">4</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div id="projects" class="mi_project_bg">
-        <div class="mi_wrap">
-          <div class="mi_project">
-            <div class="mi_project_headline">
-              <div class="mi_title-section">Проекты</div>
-              <div class="mi_project_company_list"><img class="mi_project_company_item" src="img/logo-1.png"><img class="mi_project_company_item" src="img/logo-2.png"><img class="mi_project_company_item" src="img/logo-3.png"><img class="mi_project_company_item" src="img/logo-4.png"><img class="mi_project_company_item" src="img/logo-5.png"><img class="mi_project_company_item" src="img/logo-6.png"></div>
-              <div class="mi_project_counter_list">
-                <div class="mi_project_counter_item">
-                  <div class="mi_project_num">40</div>
-                  <div class="mi_project_desc">стран</div>
+            <div class="item">
+              <a href="#seven" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+                <div class="slide_num"></div>
+              </div>
+              <div class="item">
+                <a href="#eight" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+                  <div class="slide_num"></div>
                 </div>
-                <div class="mi_project_counter_item">
-                  <div class="mi_project_num">250</div>
-                  <div class="mi_project_desc">проектов</div>
-                </div>
-              </div>
-            </div>
-            <div class="mi_breadcreams"><a href="#">Инфраструктура</a><a href="#">Атомная энергетика</a><a href="#">Нефть и газ</a><a href="#">Все</a></div>
-            <div class="container"> 
-              <div class='point_map'>
-                <img src="img/point.png"></div>
-                <div class='row'>
-                  <div class="col-8">
-                    <div class='map'><img class="map" src="img/map.png"></div>
+                <div class="item">
+                  <a href="#nine" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+                    <div class="slide_num"></div>
                   </div>
-                  <div class="col-4"> 
-                   <div class='project_slider'>
-                    <div class="project_1">
-                      <div class="image">
-                        <img src="img/map_slid.jpg" width="300px" height="150px">
-                      </div>
-                      <div class="title_slide">
-                        <h3>Атомная станция <br>
-                        Селафилд</h3>
-                      </div>
-                      <p><strong>Что сделали:</strong><br>
-                        Использовали специальную изоляцию для<br> увеличения защиты от огня и температур<br> больше 1000 градусов (что на 25% выше,<br> чем у стандартного кабеля)</p>
-                        <br>
-                        <br>
-                        <p><strong>Результат:</strong><br>
-                          Cнизили затраты <br> клиента на проект на <br> 20% и сэкономили<br> время.</p> 
-                        </div>
+                  <div class="item">
+                    <a href="#ten" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+                      <div class="slide_num"></div>
+                    </div>
+                    <div class="item">
+                      <a href="#eleven" class="href"><svg style="" width="45" height="20"><line x1="20" y1="10" x2="45" y2="10" stroke="#fff" stroke-width="2"></svg></a>
+                        <div class="slide_num"></div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-  <!-- </div> -->
-
-      <div class="section">
-        <div class="mi_all-project">
-          <div class="mi_wrap">
-            <div class="mi_btn_prev">назад</div>
-            <div class="mi_project_headline">
-              <div class="mi_title-section">Все проекты</div>
-              <div class="mi_breadcreams">
-                <div class="mi_project_tab">Инфраструктура</div>
-                <div class="mi_project_tab">Атомная энергетика</div>
-                <div class="mi_project_tab">Нефть и газ</div>
-                <div class="mi_project_tab active">Все</div>
-              </div>
-            </div>
-            <div class="mi_project_tabcontainer">
-              <div class="mi_project_tabcontent">
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_cat">Селафилд</div>
-                </div>
-              </div>
-              <div class="mi_project_tabcontent">
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-              </div>
-              <div class="mi_project_tabcontent">
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-              </div>
-              <div class="mi_project_tabcontent">
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-              </div>
-              <div class="mi_project_tabcontent open">
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-                <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
-                  <div class="mi_project_item_title">Атомная станция</div>
-                  <div class="mi_project_item_name">Селафилд</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div id="about" class="about-us">
-          <div class="mi_wrap mi_center">
-            <div class="mi_project_headline">
-              <div class="mi_info-section">
-                <div class="mi_title-section">Рамкро</div>
-                <div class="mi_desc-section">Производитель стандартных и специальных кабелей</div>
-              </div>
-              <div class="div_about-us_counter">
-                <div class="div_about-us_counter_num">60000км</div>
-                <div class="div_about-us_counter_desc">Объем производства кабеля в год</div>
-              </div>
-            </div>
-            <div class="about-us_body">
-              <div class="about-us_advantages">
-                <div class="about-us_advantages_item">
-                  <div class="about-us_advantages_item_ic fire"></div>
-                  <div class="about-us_advantages_item_title">Работаем со сложными и нестандартными проектами</div>
-                  <div class="about-us_advantages_item_desc">Высокие температуры, газовая среда, воздействие нефтепродуктов - у нас для всего есть решения. <br> <br>По запросам клиентов создаем кабели по индвидуальным техническим заданиям</div>
-                </div>
-                <div class="about-us_advantages_item">
-                  <div class="about-us_advantages_item_ic chi"></div>
-                  <div class="about-us_advantages_item_title">Работаем со сложными и нестандартными проектами</div>
-                  <div class="about-us_advantages_item_desc">Высокие температуры, газовая среда, воздействие нефтепродуктов - у нас для всего есть решения. <br> <br>По запросам клиентов создаем кабели по индвидуальным техническим заданиям</div>
-                </div>
-              </div>
-              <div class="mi_about-us_story">
-                <div class="mi_about-us_story_headline">
-                  <div class="mi_about-us_story_play"></div>
-                  <div class="mi_about-us_story_desc"><span>Смотреть ролик о производстве кабеля</span></div>
-                </div>
-                <div class="mi_about-us_story_body">С 1979 года Рамкро производит стандартные и специальные кабели для сотен клиетов по всему миру. <br><br>Главный офис и завод находятся в городе Нервиано, на севере Милана. В Москве – официальное представительство, которое курирует рынок России и СНГ.<br><br>Основная часть продукции производится в Италии, часть – в России.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div id="product" class="mi_product">
-          <div class="mi_wrap mi_center">
-            <div class="mi_title-section">Кабельная продукция</div>
-            <div class="mi_product_list">
-              <div class="mi_product_item">
-                <div><img class="mi_product_item_img" src="img/product-1.jpg">
-                  <div class="about-us_advantages_item_title">Пожаробезопасные</div>
-                  <div class="about-us_advantages_item_desc">Для сохранения электрических цепей, подачи питания и передачи сигналов при пожаре. <br><br>Используются на объектах с повышенными требованиями к пожаробезопасности.<br><br>Работают в эктремальных и опасных условиях.</div>
-                </div>
-                <div class="mi_product_item_list_btn">
-                  <div class="btn_yellow">Подробнее</div>
-                  <div class="btn_pdf">Каталог</div>
-                </div>
-              </div>
-              <div class="mi_product_item">
-                <div><img class="mi_product_item_img" src="img/product-2.jpg">
-                  <div class="about-us_advantages_item_title">Кабели для КИПиА</div>
-                  <div class="about-us_advantages_item_desc">Для контроля, управления, передачи данных, аналоговых и цифровых сигналов.<br><br>Используется в промышленности и на опасных производственных объектах.<br><br>Уникальные технологии для сложных условий эксплуатации</div>
-                </div>
-                <div class="mi_product_item_list_btn">
-                  <div class="btn_yellow">Подробнее</div>
-                  <div class="btn_pdf">Каталог</div>
-                </div>
-              </div>
-              <div class="mi_product_item">
-                <div><img class="mi_product_item_img" src="img/product-3.jpg">
-                  <div class="about-us_advantages_item_title">Автоматизация здания</div>
-                  <div class="about-us_advantages_item_desc">Для систем автоматического управления процессами в зданиях и в современных инженерных системах. <br><br>Используются на инфраструктурных, промышленных и объектах социального значения. <br><br>Широкая линейка продукции и универсальность применения</div>
-                </div>
-                <div class="mi_product_item_list_btn">
-                  <div class="btn_yellow">Подробнее</div>
-                  <div class="btn_pdf">Каталог</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-
-      <div class="mi_popup mi_popup_product">
-        <div class="mi_wrap">
-          <div class="mi_popup_close">закрыть</div>
-          <div class="mi_popup_product_list">
-            <div class="mi_popup_product_info">
-              <div class="mi_popup_product_headline">
-                <div class="mi_popup_title">Огнестойкие кабели</div>
-                <div class="mi_popup_temp">1000°C</div>
-                <div class="mi_popup_desc">При такой температуре может работать кабель  в течение 3-х часов</div>
-              </div>
-              <div class="mi_popup_product_body">
-                <div class="mi_popup_advantages_list">
-                  <div class="mi_popup_advantages_title">Ассортимент</div>
-                  <ul>
-                    <li class="mi_popup_advantages_item">Оптические кабели</li>
-                    <li class="mi_popup_advantages_item">Сигнальные кабели</li>
-                    <li class="mi_popup_advantages_item">Огнестойкие кабели</li>
-                    <li class="mi_popup_advantages_item">Пожаробезопасные кабели</li>
-                    <li class="mi_popup_advantages_item">Силовые и контрольные кабели</li>
-                    <li class="mi_popup_advantages_item">Кабели для пожарной сигнализации</li>
-                    <li class="mi_popup_advantages_item">Передача аналоговых и цифровых сигналов</li>
-                  </ul>
-                </div>
-                <div class="mi_popup_advantages_list">
-                  <div class="mi_popup_advantages_title">Где используют</div>
-                  <ul>
-                    <li class="mi_popup_advantages_item">Системы дымоудаления</li>
-                    <li class="mi_popup_advantages_item">Эвакуационное освещение</li>
-                    <li class="mi_popup_advantages_item">Системы пожарной сигнализации</li>
-                    <li class="mi_popup_advantages_item">Электропитание пожарных лифтов</li>
-                    <li class="mi_popup_advantages_item">Системы управления пожаротушением</li>
-                    <li class="mi_popup_advantages_item">Системы управления инженерным оборудованиемсигналов</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="mi_popup_product_img">
-              <div class="mi_popup_product_img_block"><img src="img/product-4.png">
-                <div class="mi_popup_product_img_desc">Описание кабеля</div>
-              </div>
-              <div class="mi_popup_product_img_block"><img src="img/product-6.png">
-                <div class="mi_popup_product_img_desc">Описание кабеля</div>
-              </div>
-              <div class="mi_popup_product_img_block"><img src="img/product-6.png">
-                <div class="mi_popup_product_img_desc">Описание кабеля</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
 
 
-      <div class="section">
-        <div id='saving' class="mi_saving">
-          <div class="mi_wrap">
-            <div class="mi_title-section">Экономим бюджет проекта</div>
-            <div class="mi_saving_list">
-              <div class="mi_saving_item">
-                <div class="about-us_advantages_item_ic robot"></div>
-                <div class="about-us_advantages_item_title">Отлаженные процессы</div>
-                <div class="about-us_advantages_item_desc">45 человек на заводе, бесперебойная работа и автоматизированное производство. <br><br>Все это исключает лишние траты и позволяет уменьшить стоимость.</div>
-              </div>
-              <div class="mi_saving_item">
-                <div class="about-us_advantages_item_ic dollar"></div>
-                <div class="about-us_advantages_item_title">Меньше себестоимость</div>
-                <div class="about-us_advantages_item_desc">Используем технологию уплотнения конструкции – поэтому нам нужно меньше материала для производства. <br><br>Характеристики кабеля при этом сохраняются.</div>
-              </div>
-              <div class="mi_saving_item">
-                <div class="about-us_advantages_item_ic leaf"></div>
-                <div class="about-us_advantages_item_title">Сохранение ресурсов</div>
-                <div class="about-us_advantages_item_desc">Применяем энергосберегающие технологии, которые снижают затраты на производство кабеля.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--    part 2-->
-      <div class="section">
-        <div class="mi_feedback">
-          <div class="mi_wrap mi_center">
-            <div class="mi_title-section">Оставьте <br> заявку</div>
-            <div class="mi_desc-section">На просчет стоимости по вашему типу кабеля и узнайте, сколько денег вы сможете сэкономить.</div>
-            <div class="btn_yellow">Узнать</div>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div id="advantages" class="about-us advantages">
-          <div class="mi_wrap mi_center">
-            <div class="mi_project_headline">
-              <div class="mi_info-section">
-                <div class="mi_title-section">Изготовим и поставим <br>любую партию кабеля точно в срок</div>
-              </div>
-              <div class="div_about-us_counter">
-                <div class="div_about-us_counter_num">От 21 дня</div>
-                <div class="div_about-us_counter_desc">Занимает производство партии кабеля</div>
-              </div>
-            </div>
-            <div class="about-us_body">
-              <div class="about-us_advantages">
-                <div class="about-us_advantages_item">
-                  <div class="about-us_advantages_item_ic fire"></div>
-                  <div class="about-us_advantages_item_title">Поставляем большие и маленькие партии</div>
-                  <div class="about-us_advantages_item_desc">Высокие температуры, газовая среда, воздействие нефтепродуктов - у нас для всего есть решения. <br> <br>По запросам клиентов создаем кабели по индвидуальным техническим заданиям</div>
-                </div>
-                <div class="about-us_advantages_item">
-                  <div class="about-us_advantages_item_ic chi"></div>
-                  <div class="about-us_advantages_item_title">Контролируем все <br> процессы</div>
-                  <div class="about-us_advantages_item_desc">Используем немецкую систему SAP для управления предприятием. <br><br>С ее помощью мы точно знаем, когда ваша партия будет готова к отгрузке и как скоро она будет у вас на объекте.<br><br>Для стандартных кабелей, которые пользуются спросом, мы делаем заготовки, поэтому долго ждать не придется.</div>
-                </div>
-              </div>
-              <div class="mi_advantages_tour">
-                <div class="mi_advantages_tour_img"></div>
-                <div class="mi_advantages_tour_title">Вы можете поехать в Италию</div>
-                <div class="mi_advantages_tour_desc">Основная часть продукции производится в Италии, часть – в России.Основная часть продукции производится в Италии, часть – в России.Основная часть продукции производится в Италии, часть – в России.Основная часть продукции производится в Италии, часть – в России.</div>
-                <div class="btn_yellow">Поехать на экскурсию</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div id="garant" class="mi_garant">
-          <div class="mi_wrap mi_center">
-            <div class="mi_title-section">Сделка защищена договором</div>
-            <div class="mi_garant_list">
-              <div class="mi_garant_order-1">
-                <div class="mi_garant_item">
-                  <div class="mi_garant_title">Завод фиксирует цену <br> в договоре</div>
-                  <div class="mi_garant_desc">Чтобы исключить риск колебания цен, производитель прописывает стоимость продукции в договоре и фиксирует ее на весь срок производства и поставки.</div>
-                </div>
-                <div class="mi_garant_item">
-                  <div class="mi_garant_title">Гарантия <br> 5 лет</div>
-                  <div class="mi_garant_desc">Заводская гарантия на кабель при соблюдении условий использования. Срок службы - до 50 лет.</div>
-                </div>
-              </div>
-              <div class="mi_garant_template_download"><img class="mi_garant_template" src="img/garant-template.png"><a class="btn_yellow" href="#">Скачать пример</a></div>
-              <div class="mi_garant_order-3">
-                <div class="mi_garant_item">
-                  <div class="mi_garant_title">Защита от просрочек и <br>невыполения условий</div>
-                  <div class="mi_garant_desc">Возможность работы по SMART контрактам с применением технологии Blockchain. Подробности и как работает - узнавайте у менеджера.</div>
-                </div>
-                <div class="mi_garant_item">
-                  <div class="mi_garant_title">Бесплатная техподдержка <br> 24 часа 7 дней в неделю</div>
-                  <div class="mi_garant_desc">Чтобы исключить риск колебания цен, производитель прописывает стоимость продукции в договоре и фиксирует ее на весь срок производства и поставки.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div id='doc' class="mi_doc">
-          <div class="mi_wrap">
-            <div class="mi_title-section">Файлы</div>
-            <div class="mi_doc_list">
-              <div class="mi_doc_item">
-                <div>
-                  <div class="about-us_advantages_item_ic list"></div>
-                  <div class="mi_doc_item_title">Документы</div>
-                  <div class="mi_doc_item_desc">Необходимая техническая и разрешительная документация для работы в России и СНГ</div>
-                  <div class="mi_doc_download_list"><a class="mi_doc_download_item" href="#">Пожарный сертификат</a><a class="mi_doc_download_item" href="#">Пожарный сертификат</a><a class="mi_doc_download_item" href="#">Пожарный сертификат</a></div>
-                </div>
-                <div class="btn_yellow">Весь список</div>
-              </div>
-              <div class="mi_doc_item">
-                <div>
-                  <div class="about-us_advantages_item_ic cat"></div>
-                  <div class="mi_doc_item_title">Каталоги</div>
-                  <div class="mi_doc_item_desc">С подробным описанием технических данных и конструкций</div>
-                  <div class="mi_doc_download_list"><a class="mi_doc_download_item" href="#">Огнестойкие кабели</a><a class="mi_doc_download_item" href="#">Огнестойкие кабели</a><a class="mi_doc_download_item" href="#">Огнестойкие кабели</a></div>
-                </div>
-                <div class="btn_yellow">Весь список</div>
-              </div>
-              <div class="mi_doc_item">
-                <div>
-                  <div class="about-us_advantages_item_ic list"></div>
-                  <div class="mi_doc_item_title">О компании</div>
-                  <div class="mi_doc_item_desc">Презентация российского представительства Рамкро в РФ и СНГ</div>
-                </div>
-                <div class="btn_yellow">Весь список</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--    part 2-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
-    <script src="libs/slick/slick.min.js"></script>
-    <script src="js.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
-    <script> $(document).ready(function() { $('#fullpage').fullpage({
-    
-        slidesNavigation: true,
-        fadingEffect: true,
-        navigation: true,
-        menu: '.mi_header',
-          onLeave: function(origin, destination, direction){
-    var leavingSection = this;
-
-    if (destination != 1 ) {
-      console.log('aa');
-      $('.mi_header .mi_header_info').css({
-          color: 'black'
-      });
-      $('.mi_logo_desc').css({
-    'border-right': '1px solid black'
-      })
-    } else {
-        $('.mi_header .mi_header_info').css({
-          color: '#fff'
-      })
-      $('.mi_logo_desc').css({
-    'border-right': '1px solid #fff'
-      })
-    }
-    //после покидания раздела 2
-
-    if(origin.index == 1 && direction =='down'){
-      alert("Going to section 3!");
-    }
-
-    else if(origin.index == 1 && direction == 'up'){
-      alert("Going to section 1!");
-    }
-  }
-        
-        });
+                    <div id="fullpage">
+                      <div class="section" data-anchor="one" style="z-index: 100">
+                        <div class="mi_wrap_callback">
+                          <div class="mi_wrap">
+                            <div class="callback"></div>
+                          </div>
+                        </div>
+                        <div class="mi_slider">
+                          <div class="mi_slide"><img src="img/slide-1.jpg">
+                            <div class="mi_wrap padding-left">
+                              <div class="mi_slide_plate">
+                                <div class="mi_slide_plate_site">
+                                  <div class="mi_slide_title">39 лет мастерства</div>
+                                  <div class="mi_slide_desc">В производстве специальных кабелей для нефти и газа</div>
+                                </div>
+                                <div class="mi_slide_plate_link">
+                                  <div class="mi_slide_company">Новокуйбышевский завод масел и присадок</div><a class="btn_yellow" href="#">Смотреть проекты</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mi_slide"><img src="img/slide-2.jpg">
+                            <div class="mi_wrap padding-left">
+                              <div class="mi_slide_plate">
+                                <div class="mi_slide_plate_site">
+                                  <div class="mi_slide_title">Итальянское качество</div>
+                                  <div class="mi_slide_desc">Теперь официально в России</div>
+                                </div>
+                                <div class="mi_slide_plate_link">
+                                  <div class="mi_slide_company fancybox_play">Смотреть ролик о производстве кабеля</div><a class="btn_yellow" href="#">Читать о компании</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mi_slide"><img src="img/slide-3.jpg">
+                            <div class="mi_wrap padding-left">
+                              <div class="mi_slide_plate">
+                                <div class="mi_slide_plate_site">
+                                  <div class="mi_slide_title">Будущее наступило</div>
+                                  <div class="mi_slide_desc">Новые технологии производства кабеля</div>
+                                </div>
+                                <div class="mi_slide_plate_link">
+                                  <div class="mi_slide_company fancybox_play">Смотреть ролик о производстве кабеля</div><a class="btn_yellow" href="#">Читать о компании</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
 
-});</script>
-</body>
+
+                      <div class="section" data-anchor="two" >
+                        <div id="technology" class="mi_technology">
+                          <div class="mi_wrap">
+                            <div class="mi_title-section">Создаем новые технологии</div>
+                            <div class="mi_technology_container">
+                              <div class="mi_technology_list">
+                                <div class="mi_technology_item"><span class="line-1"></span><span class="line-2"></span><span class="line-3"></span><span class="line-4"></span>
+                                  <div class="mi_technology_ic">1</div>
+                                  <div class="mi_technology_title">Улучшенный ПВХ</div>
+                                  <div class="mi_technology_desc">Материал оболочки объединяющий лучшие свойства ПВХ и безгалогенного материала. Гибкость, легкая прокладка, сопротивление к перепаду температур, повышенная стойкость к углеводородам, кислотам, щелочам и воде. <br><br><strong>Преимущества</strong><br>невысокая цена при высоких характеристиках. <br><br><strong>Выгоды</strong><br>экономия средств</div>
+                                </div>
+                                <div class="mi_technology_item"><span class="line-2-1"></span><span class="line-2-2"></span><span class="line-2-3"></span><span class="line-2-4"></span>
+                                  <div class="mi_technology_ic">2</div>
+                                  <div class="mi_technology_title">Газ-стоп <span>Gas stop</span></div>
+                                  <div class="mi_technology_desc">Защита от распространения по кабелю опасных газов с помощью герметизации кабельного сердечника. <br><br><strong>Преимущества</strong><br>защита от распространения газов по кабелю, предотвращение воспламенений и взырвоопасных ситуаций.<br><br><strong>Выгоды</strong><br> экономия средств на замене или ремонте поврежденного газом оборудования. Предотвращает происшествия на объекте.</div>
+                                </div>
+                                <div class="mi_technology_item"><span class="line-3-1"></span><span class="line-3-2"></span><span class="line-3-3"></span><span class="line-3-4"></span>
+                                  <div class="mi_technology_ic">3</div>
+                                  <div class="mi_technology_title">Нилорам</div>
+                                  <div class="mi_technology_desc">Защита от агрессивных химических веществ и влаги с помощью дополнительной внутренней оболочки из специальных полиамидных материалов. <br><br><strong>Преимущества</strong><br>гибкость, полная химическая стойкость, малый внешний диаметр и вес. <br><br><strong>Выгоды</strong><br>дешевле чем применение дополнительной внешней химической защиты, быстрая прокладка и монтаж</div>
+                                </div>
+                                <div class="mi_technology_item"><span class="line-4-2"></span><span class="line-4-3"></span><span class="line-4-4"></span>
+                                  <div class="mi_technology_ic">4</div>
+                                  <div class="mi_technology_title">Улучшенный силикон</div>
+                                  <div class="mi_technology_desc">Материал оболочки объединяющий лучшие свойства ПВХ и безгалогенного материала. Гибкость, легкая прокладка, сопротивление к перепаду температур, повышенная стойкость к углеводородам, кислотам, щелочам и воде. <br><br><strong>Преимущества</strong><br>невысокая цена при высоких характеристиках. <br><br><strong>Выгоды</strong><br>экономия средств</div>
+                                </div>
+                              </div>
+                              <div class="mi_technology_img_block"><img class="mi_technology_img" src="img/technology.jpg">
+                                <div class="mi_project_counter counter-1">1</div>
+                                <div class="mi_project_counter counter-2">2</div>
+                                <div class="mi_project_counter counter-3">3</div>
+                                <div class="mi_project_counter counter-4">4</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="section" data-anchor="three">
+                        <div id="projects" class="mi_project_bg">
+                          <div class="mi_wrap">
+                            <div class="mi_project">
+                              <div class="mi_project_headline">
+                                <div class="mi_title-section">Проекты</div>
+                                <div class="mi_project_company_list"><img class="mi_project_company_item" src="img/logo-1.png"><img class="mi_project_company_item" src="img/logo-2.png"><img class="mi_project_company_item" src="img/logo-3.png"><img class="mi_project_company_item" src="img/logo-4.png"><img class="mi_project_company_item" src="img/logo-5.png"><img class="mi_project_company_item" src="img/logo-6.png"></div>
+                                <div class="mi_project_counter_list">
+                                  <div class="mi_project_counter_item">
+                                    <div class="mi_project_num">40</div>
+                                    <div class="mi_project_desc">стран</div>
+                                  </div>
+                                  <div class="mi_project_counter_item">
+                                    <div class="mi_project_num">250</div>
+                                    <div class="mi_project_desc">проектов</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mi_breadcreams"><a href="#">Инфраструктура</a><a href="#">Атомная энергетика</a><a href="#">Нефть и газ</a><a href="#">Все</a></div>
+                              <div class="container"> 
+                                <div class='point_map'>
+                                  <img src="img/point.png"></div>
+                                  <div class='row'>
+                                    <div class="col-8">
+                                      <div class='map'><img class="map" src="img/map.png"></div>
+                                    </div>
+                                    <div class="col-4"> 
+                                     <div class='project_slider'>
+                                      <div class="project_1">
+                                        <div class="image">
+                                          <img src="img/map_slid.jpg" width="300px" height="150px">
+                                        </div>
+                                        <div class="title_slide">
+                                          <h3>Атомная станция <br>
+                                          Селафилд</h3>
+                                        </div>
+                                        <p><strong>Что сделали:</strong><br>
+                                          Использовали специальную изоляцию для<br> увеличения защиты от огня и температур<br> больше 1000 градусов (что на 25% выше,<br> чем у стандартного кабеля)</p>
+                                          <br>
+                                          <br>
+                                          <p><strong>Результат:</strong><br>
+                                            Cнизили затраты <br> клиента на проект на <br> 20% и сэкономили<br> время.</p> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- </div> -->
+
+                          <div class="section" data-anchor="four">
+                            <div class="mi_all-project">
+                              <div class="mi_wrap">
+                                <div class="mi_btn_prev">назад</div>
+                                <div class="mi_project_headline">
+                                  <div class="mi_title-section">Все проекты</div>
+                                  <div class="mi_breadcreams">
+                                    <div class="mi_project_tab">Инфраструктура</div>
+                                    <div class="mi_project_tab">Атомная энергетика</div>
+                                    <div class="mi_project_tab">Нефть и газ</div>
+                                    <div class="mi_project_tab active">Все</div>
+                                  </div>
+                                </div>
+                                <div class="mi_project_tabcontainer">
+                                  <div class="mi_project_tabcontent">
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_cat">Селафилд</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_project_tabcontent">
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_project_tabcontent">
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_project_tabcontent">
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_project_tabcontent open">
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                    <div class="mi_project_item"><img class="mi_project_item_img" src="img/slide-3.jpg">
+                                      <div class="mi_project_item_title">Атомная станция</div>
+                                      <div class="mi_project_item_name">Селафилд</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="section" data-anchor="five">
+                            <div id="about" class="about-us">
+                              <div class="mi_wrap mi_center">
+                                <div class="mi_project_headline">
+                                  <div class="mi_info-section">
+                                    <div class="mi_title-section">Рамкро</div>
+                                    <div class="mi_desc-section">Производитель стандартных и специальных кабелей</div>
+                                  </div>
+                                  <div class="div_about-us_counter">
+                                    <div class="div_about-us_counter_num">60000км</div>
+                                    <div class="div_about-us_counter_desc">Объем производства кабеля в год</div>
+                                  </div>
+                                </div>
+                                <div class="about-us_body">
+                                  <div class="about-us_advantages">
+                                    <div class="about-us_advantages_item">
+                                      <div class="about-us_advantages_item_ic fire"></div>
+                                      <div class="about-us_advantages_item_title">Работаем со сложными и нестандартными проектами</div>
+                                      <div class="about-us_advantages_item_desc">Высокие температуры, газовая среда, воздействие нефтепродуктов - у нас для всего есть решения. <br> <br>По запросам клиентов создаем кабели по индвидуальным техническим заданиям</div>
+                                    </div>
+                                    <div class="about-us_advantages_item">
+                                      <div class="about-us_advantages_item_ic chi"></div>
+                                      <div class="about-us_advantages_item_title">Работаем со сложными и нестандартными проектами</div>
+                                      <div class="about-us_advantages_item_desc">Высокие температуры, газовая среда, воздействие нефтепродуктов - у нас для всего есть решения. <br> <br>По запросам клиентов создаем кабели по индвидуальным техническим заданиям</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_about-us_story">
+                                    <div class="mi_about-us_story_headline">
+                                      <div class="mi_about-us_story_play"></div>
+                                      <div class="mi_about-us_story_desc"><span>Смотреть ролик о производстве кабеля</span></div>
+                                    </div>
+                                    <div class="mi_about-us_story_body">С 1979 года Рамкро производит стандартные и специальные кабели для сотен клиетов по всему миру. <br><br>Главный офис и завод находятся в городе Нервиано, на севере Милана. В Москве – официальное представительство, которое курирует рынок России и СНГ.<br><br>Основная часть продукции производится в Италии, часть – в России.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="section" data-anchor="six">
+                            <div id="product" class="mi_product">
+                              <div class="mi_wrap mi_center">
+                                <div class="mi_title-section">Кабельная продукция</div>
+                                <div class="mi_product_list">
+                                  <div class="mi_product_item">
+                                    <div><img class="mi_product_item_img" src="img/product-1.jpg">
+                                      <div class="about-us_advantages_item_title">Пожаробезопасные</div>
+                                      <div class="about-us_advantages_item_desc">Для сохранения электрических цепей, подачи питания и передачи сигналов при пожаре. <br><br>Используются на объектах с повышенными требованиями к пожаробезопасности.<br><br>Работают в эктремальных и опасных условиях.</div>
+                                    </div>
+                                    <div class="mi_product_item_list_btn">
+                                      <div class="btn_yellow">Подробнее</div>
+                                      <div class="btn_pdf">Каталог</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_product_item">
+                                    <div><img class="mi_product_item_img" src="img/product-2.jpg">
+                                      <div class="about-us_advantages_item_title">Кабели для КИПиА</div>
+                                      <div class="about-us_advantages_item_desc">Для контроля, управления, передачи данных, аналоговых и цифровых сигналов.<br><br>Используется в промышленности и на опасных производственных объектах.<br><br>Уникальные технологии для сложных условий эксплуатации</div>
+                                    </div>
+                                    <div class="mi_product_item_list_btn">
+                                      <div class="btn_yellow">Подробнее</div>
+                                      <div class="btn_pdf">Каталог</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_product_item">
+                                    <div><img class="mi_product_item_img" src="img/product-3.jpg">
+                                      <div class="about-us_advantages_item_title">Автоматизация здания</div>
+                                      <div class="about-us_advantages_item_desc">Для систем автоматического управления процессами в зданиях и в современных инженерных системах. <br><br>Используются на инфраструктурных, промышленных и объектах социального значения. <br><br>Широкая линейка продукции и универсальность применения</div>
+                                    </div>
+                                    <div class="mi_product_item_list_btn">
+                                      <div class="btn_yellow">Подробнее</div>
+                                      <div class="btn_pdf">Каталог</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="mi_popup mi_popup_product">
+                              <div class="mi_wrap">
+                                <div class="mi_popup_close">закрыть</div>
+                                <div class="mi_popup_product_list">
+                                  <div class="mi_popup_product_info">
+                                    <div class="mi_popup_product_headline">
+                                      <div class="mi_popup_title">Огнестойкие кабели</div>
+                                      <div class="mi_popup_temp">1000°C</div>
+                                      <div class="mi_popup_desc">При такой температуре может работать кабель  в течение 3-х часов</div>
+                                    </div>
+                                    <div class="mi_popup_product_body">
+                                      <div class="mi_popup_advantages_list">
+                                        <div class="mi_popup_advantages_title">Ассортимент</div>
+                                        <ul>
+                                          <li class="mi_popup_advantages_item">Оптические кабели</li>
+                                          <li class="mi_popup_advantages_item">Сигнальные кабели</li>
+                                          <li class="mi_popup_advantages_item">Огнестойкие кабели</li>
+                                          <li class="mi_popup_advantages_item">Пожаробезопасные кабели</li>
+                                          <li class="mi_popup_advantages_item">Силовые и контрольные кабели</li>
+                                          <li class="mi_popup_advantages_item">Кабели для пожарной сигнализации</li>
+                                          <li class="mi_popup_advantages_item">Передача аналоговых и цифровых сигналов</li>
+                                        </ul>
+                                      </div>
+                                      <div class="mi_popup_advantages_list">
+                                        <div class="mi_popup_advantages_title">Где используют</div>
+                                        <ul>
+                                          <li class="mi_popup_advantages_item">Системы дымоудаления</li>
+                                          <li class="mi_popup_advantages_item">Эвакуационное освещение</li>
+                                          <li class="mi_popup_advantages_item">Системы пожарной сигнализации</li>
+                                          <li class="mi_popup_advantages_item">Электропитание пожарных лифтов</li>
+                                          <li class="mi_popup_advantages_item">Системы управления пожаротушением</li>
+                                          <li class="mi_popup_advantages_item">Системы управления инженерным оборудованиемсигналов</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_popup_product_img">
+                                    <div class="mi_popup_product_img_block"><img src="img/product-4.png">
+                                      <div class="mi_popup_product_img_desc">Описание кабеля</div>
+                                    </div>
+                                    <div class="mi_popup_product_img_block"><img src="img/product-6.png">
+                                      <div class="mi_popup_product_img_desc">Описание кабеля</div>
+                                    </div>
+                                    <div class="mi_popup_product_img_block"><img src="img/product-6.png">
+                                      <div class="mi_popup_product_img_desc">Описание кабеля</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="section" data-anchor="seven">
+                            <div id='saving' class="mi_saving">
+                              <div class="mi_wrap">
+                                <div class="mi_title-section">Экономим бюджет проекта</div>
+                                <div class="mi_saving_list">
+                                  <div class="mi_saving_item">
+                                    <div class="about-us_advantages_item_ic robot"></div>
+                                    <div class="about-us_advantages_item_title">Отлаженные процессы</div>
+                                    <div class="about-us_advantages_item_desc">45 человек на заводе, бесперебойная работа и автоматизированное производство. <br><br>Все это исключает лишние траты и позволяет уменьшить стоимость.</div>
+                                  </div>
+                                  <div class="mi_saving_item">
+                                    <div class="about-us_advantages_item_ic dollar"></div>
+                                    <div class="about-us_advantages_item_title">Меньше себестоимость</div>
+                                    <div class="about-us_advantages_item_desc">Используем технологию уплотнения конструкции – поэтому нам нужно меньше материала для производства. <br><br>Характеристики кабеля при этом сохраняются.</div>
+                                  </div>
+                                  <div class="mi_saving_item">
+                                    <div class="about-us_advantages_item_ic leaf"></div>
+                                    <div class="about-us_advantages_item_title">Сохранение ресурсов</div>
+                                    <div class="about-us_advantages_item_desc">Применяем энергосберегающие технологии, которые снижают затраты на производство кабеля.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--    part 2-->
+                          <div class="section" data-anchor="eight">
+                            <div class="mi_feedback">
+                              <div class="mi_wrap mi_center">
+                                <div class="mi_title-section">Оставьте <br> заявку</div>
+                                <div class="mi_desc-section">На просчет стоимости по вашему типу кабеля и узнайте, сколько денег вы сможете сэкономить.</div>
+                                <div class="btn_yellow">Узнать</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="section" data-anchor="nine">
+                            <div id="advantages" class="about-us advantages">
+                              <div class="mi_wrap mi_center">
+                                <div class="mi_project_headline">
+                                  <div class="mi_info-section">
+                                    <div class="mi_title-section">Изготовим и поставим <br>любую партию кабеля точно в срок</div>
+                                  </div>
+                                  <div class="div_about-us_counter">
+                                    <div class="div_about-us_counter_num">От 21 дня</div>
+                                    <div class="div_about-us_counter_desc">Занимает производство партии кабеля</div>
+                                  </div>
+                                </div>
+                                <div class="about-us_body">
+                                  <div class="about-us_advantages">
+                                    <div class="about-us_advantages_item">
+                                      <div class="about-us_advantages_item_ic fire"></div>
+                                      <div class="about-us_advantages_item_title">Поставляем большие и маленькие партии</div>
+                                      <div class="about-us_advantages_item_desc">Высокие температуры, газовая среда, воздействие нефтепродуктов - у нас для всего есть решения. <br> <br>По запросам клиентов создаем кабели по индвидуальным техническим заданиям</div>
+                                    </div>
+                                    <div class="about-us_advantages_item">
+                                      <div class="about-us_advantages_item_ic chi"></div>
+                                      <div class="about-us_advantages_item_title">Контролируем все <br> процессы</div>
+                                      <div class="about-us_advantages_item_desc">Используем немецкую систему SAP для управления предприятием. <br><br>С ее помощью мы точно знаем, когда ваша партия будет готова к отгрузке и как скоро она будет у вас на объекте.<br><br>Для стандартных кабелей, которые пользуются спросом, мы делаем заготовки, поэтому долго ждать не придется.</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_advantages_tour">
+                                    <div class="mi_advantages_tour_img"></div>
+                                    <div class="mi_advantages_tour_title">Вы можете поехать в Италию</div>
+                                    <div class="mi_advantages_tour_desc">Основная часть продукции производится в Италии, часть – в России.Основная часть продукции производится в Италии, часть – в России.Основная часть продукции производится в Италии, часть – в России.Основная часть продукции производится в Италии, часть – в России.</div>
+                                    <div class="btn_yellow">Поехать на экскурсию</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="section" data-anchor="ten">
+                            <div id="garant" class="mi_garant">
+                              <div class="mi_wrap mi_center">
+                                <div class="mi_title-section">Сделка защищена договором</div>
+                                <div class="mi_garant_list">
+                                  <div class="mi_garant_order-1">
+                                    <div class="mi_garant_item">
+                                      <div class="mi_garant_title">Завод фиксирует цену <br> в договоре</div>
+                                      <div class="mi_garant_desc">Чтобы исключить риск колебания цен, производитель прописывает стоимость продукции в договоре и фиксирует ее на весь срок производства и поставки.</div>
+                                    </div>
+                                    <div class="mi_garant_item">
+                                      <div class="mi_garant_title">Гарантия <br> 5 лет</div>
+                                      <div class="mi_garant_desc">Заводская гарантия на кабель при соблюдении условий использования. Срок службы - до 50 лет.</div>
+                                    </div>
+                                  </div>
+                                  <div class="mi_garant_template_download"><img class="mi_garant_template" src="img/garant-template.png"><a class="btn_yellow" href="#">Скачать пример</a></div>
+                                  <div class="mi_garant_order-3">
+                                    <div class="mi_garant_item">
+                                      <div class="mi_garant_title">Защита от просрочек и <br>невыполения условий</div>
+                                      <div class="mi_garant_desc">Возможность работы по SMART контрактам с применением технологии Blockchain. Подробности и как работает - узнавайте у менеджера.</div>
+                                    </div>
+                                    <div class="mi_garant_item">
+                                      <div class="mi_garant_title">Бесплатная техподдержка <br> 24 часа 7 дней в неделю</div>
+                                      <div class="mi_garant_desc">Чтобы исключить риск колебания цен, производитель прописывает стоимость продукции в договоре и фиксирует ее на весь срок производства и поставки.</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="section" data-anchor="eleven">
+                            <div id='doc' class="mi_doc">
+                              <div class="mi_wrap">
+                                <div class="mi_title-section">Файлы</div>
+                                <div class="mi_doc_list">
+                                  <div class="mi_doc_item">
+                                    <div>
+                                      <div class="about-us_advantages_item_ic list"></div>
+                                      <div class="mi_doc_item_title">Документы</div>
+                                      <div class="mi_doc_item_desc">Необходимая техническая и разрешительная документация для работы в России и СНГ</div>
+                                      <div class="mi_doc_download_list"><a class="mi_doc_download_item" href="#">Пожарный сертификат</a><a class="mi_doc_download_item" href="#">Пожарный сертификат</a><a class="mi_doc_download_item" href="#">Пожарный сертификат</a></div>
+                                    </div>
+                                    <div class="btn_yellow">Весь список</div>
+                                  </div>
+                                  <div class="mi_doc_item">
+                                    <div>
+                                      <div class="about-us_advantages_item_ic cat"></div>
+                                      <div class="mi_doc_item_title">Каталоги</div>
+                                      <div class="mi_doc_item_desc">С подробным описанием технических данных и конструкций</div>
+                                      <div class="mi_doc_download_list"><a class="mi_doc_download_item" href="#">Огнестойкие кабели</a><a class="mi_doc_download_item" href="#">Огнестойкие кабели</a><a class="mi_doc_download_item" href="#">Огнестойкие кабели</a></div>
+                                    </div>
+                                    <div class="btn_yellow">Весь список</div>
+                                  </div>
+                                  <div class="mi_doc_item">
+                                    <div>
+                                      <div class="about-us_advantages_item_ic list"></div>
+                                      <div class="mi_doc_item_title">О компании</div>
+                                      <div class="mi_doc_item_desc">Презентация российского представительства Рамкро в РФ и СНГ</div>
+                                    </div>
+                                    <div class="btn_yellow">Весь список</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--    part 2-->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                        <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+                        <script src="libs/slick/slick.min.js"></script>
+                        <script src="js.js"></script>
+                        <script src="libs/fullpage/fullpage_settings.js"></script>
+                        <script type="text/javascript" src="libs/fullpage/jquery.fullpage.js"></script>
+                      </body>
 
 
 

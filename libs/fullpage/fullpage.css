@@ -1,0 +1,59 @@
+#map { width:500px; height:500px; }
+  .fullpage-wrapper {
+    width: 100%!important;
+    transform: none!important;
+  }
+
+  .fp-section {
+    width: 100%!important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+  }
+
+  .fp-section.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .fp-slidesContainer {
+    width: 100%!important;
+    transform: none!important;
+  }
+
+  .fp-slide {
+    width: 100%!important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  .fp-slide.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .fullpage_dots {
+    display:flex;
+    flex-direction: column;
+  }
+  .fullpage_dots .item {
+    width: 85px;
+    display: flex;
+    color:white;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .slide_num {
+    padding-left: 12px;
+    font-size: 15px;
+    position: relative;
+    top: 1px;
+  }
